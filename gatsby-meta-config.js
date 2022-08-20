@@ -6,7 +6,7 @@ module.exports = {
   siteUrl: `https://ryuna.vercel.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: `https://github.com/anottrx`, // Your GitHub account
+    github: `anottrx`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
@@ -22,7 +22,7 @@ module.exports = {
     countOfInitialPost: 10, // Config your initial count of post
   },
   sponsor: {
-    buyMeACoffeeId: 'jbee',
+    buyMeACoffeeId: '',
   },
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2

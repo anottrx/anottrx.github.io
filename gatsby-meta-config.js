@@ -2,7 +2,7 @@ module.exports = {
   title: `record`,
   description: `records`,
   author: `ryuna`,
-  introduction: `배운 내용을 기록합니다`,
+  introduction: `안녕하세요, 이곳은 개발하면서 공부한 내용을 기록하는 곳입니다.`,
   siteUrl: `https://ryuna.vercel.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
@@ -27,6 +27,6 @@ module.exports = {
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: '0', // Add your google analytics tranking ID
+  ga: 'G-GRPRX81E5C', // Add your google analytics tranking ID
   ad: '', // Add your google adsense publisherId `ca-pub-xxxxxxxxxx`
 }

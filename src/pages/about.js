@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
+import { Layout } from '../layout'
 import { rhythm } from '../utils/typography'
 import * as Lang from '../constants'
 
@@ -12,18 +13,20 @@ export default ({ data }) => {
     .map(({ node }) => node)[0]
 
   return (
-    <div
-      style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
-          3 / 4
-        )}`,
-      }}
-    >
-      <div dangerouslySetInnerHTML={{ __html: resume.html }} />
-    </div>
+    <Layout location={'/'} title={'record'}>
+      <div
+        style={{
+          marginLeft: `auto`,
+          marginRight: `auto`,
+          maxWidth: rhythm(28),
+          padding: `${rhythm(0.5)} ${rhythm(3 / 4)} ${rhythm(1.5)} ${rhythm(
+            3 / 4
+          )}`,
+        }}
+      >
+        <div dangerouslySetInnerHTML={{ __html: resume.html }} />
+      </div>
+    </Layout>
   )
 }
 

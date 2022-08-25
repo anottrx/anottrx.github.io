@@ -5,7 +5,7 @@ category: 'study'
 draft: false
 ---
 
-# 문자, 문자열
+## 문자, 문자열
 
 ### Ascii (A~Z: 65~90) (a~z: 97~122)
 
@@ -37,7 +37,7 @@ if (str.endsWith('end')) {
 }
 ```
 
-# 배열
+## 배열
 
 ### 일차원 배열
 
@@ -89,7 +89,7 @@ arr.sort(function(a, b) {
 const result = arr.reduce((prev, cur) => [...prev, cur.cost], [])
 ```
 
-# Set, Map
+## Set, Map
 
 ### Set
 
@@ -128,7 +128,7 @@ myMap.forEach((value, key, map) => {
 })
 ```
 
-# Stack, Queue
+## Stack, Queue
 
 ```js
 const stack = []
@@ -140,7 +140,7 @@ queue.push(1)
 queue.shift()
 ```
 
-# 숫자
+## 숫자
 
 ### 숫자 정렬
 

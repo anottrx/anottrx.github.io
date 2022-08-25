@@ -8,6 +8,7 @@ lang: 'en'
 
 <div align="center">
 
-안녕하세요, 프론트엔드 개발자 ryuna입니다.
+안녕하세요, 프론트엔드 개발자 ryuna입니다.  
+이전 블로그는 [이곳](https://anott.tistory.com/)입니다.
 
 </div>

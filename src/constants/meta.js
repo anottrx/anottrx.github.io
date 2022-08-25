@@ -1,1 +1,1 @@
-export const HOME_TITLE = 'record'
+export const HOME_TITLE = 'Home'

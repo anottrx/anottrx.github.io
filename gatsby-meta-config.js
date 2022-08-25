@@ -2,7 +2,7 @@ module.exports = {
   title: `record`,
   description: `records`,
   author: `ryuna`,
-  introduction: `안녕하세요, 이곳은 개발하면서 공부한 내용을 기록하는 곳입니다.`,
+  introduction: `안녕하세요, 개발하면서 공부한 내용을 기록합니다.`,
   siteUrl: `https://ryuna.vercel.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
@@ -12,7 +12,7 @@ module.exports = {
     linkedin: ``, // Your LinkedIn account
     instagram: ``, // Your Instagram account
   },
-  icon: `content/assets/felog.png`, // Add your favicon
+  icon: `content/assets/favicon.png`, // Add your favicon
   keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.

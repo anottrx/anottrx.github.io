@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "ryuna <anottrx@gmail.com>",
   "bugs": {
-    "url": "https://github.com/anottrx/record/issues"
+    "url": "https://github.com/anottrx/anottrx.github.io/issues"
   },
   "dependencies": {
     "gatsby": "^2.2.8",
@@ -76,7 +76,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anottrx/record.git"
+    "url": "git+https://github.com/anottrx/anottrx.github.io.git"
   },
   "scripts": {
     "post": "gatsby-post-gen",
@@ -87,6 +87,7 @@
     "start": "npm run develop",
     "build": "gatsby build",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "create": "gatsby-post-gen"
   }
 }

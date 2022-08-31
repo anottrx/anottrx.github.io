@@ -3,7 +3,7 @@ module.exports = {
   description: `records`,
   author: `ryuna`,
   introduction: `안녕하세요, 개발하면서 공부한 내용을 기록합니다.`,
-  siteUrl: `https://ryuna.vercel.app/`, // Your blog site url
+  siteUrl: `https://anottrx.github.io/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `anottrx`, // Your GitHub account

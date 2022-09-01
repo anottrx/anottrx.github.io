@@ -1,8 +1,8 @@
 module.exports = {
-  title: `record`,
+  title: `anottrx.github.io`,
   description: `records`,
   author: `ryuna`,
-  introduction: `안녕하세요, 개발하면서 공부한 내용을 기록합니다.`,
+  introduction: `개발하면서 배우고 느낀 점을 기록합니다.`,
   siteUrl: `https://anottrx.github.io/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account

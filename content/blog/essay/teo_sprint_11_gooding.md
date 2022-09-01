@@ -11,7 +11,7 @@ draft: false
 
 우리 3조는 **구딩**이라는 편하게 구독 관리를 할 수 있는 서비스를 만들었다. 구딩은 `구독+ing`를 귀엽게 표현한 것이다. 우리 팀은 이지, 현, 찌나오, 준, 아얀, 나동, 나 이렇게 프론트엔드 7명만 모여서 `Princess-Teo-And-The-Seven-Frontend`라는 팀명을 가지게 되었다. 프로젝트를 진행하면서 MC는 나동이, UIUX 최종결정권자는 찌나오가, PL은 아얀이 담당했다.
 
-![](./images/teo-sprint-11-gooding-team.png)
+![](./images/teo_sprint_11_gooding_team.png)
 
 프로젝트 결과물은 [이곳](https://gooding.vercel.app/)에서 확인이 가능하고, 깃허브 레포지토리는 [이곳](https://github.com/Princess-Teo-And-The-Seven-Frontend/gooding)에서 확인이 가능하다.
 
@@ -21,15 +21,15 @@ draft: false
 
 첫 번째 날에는 준비해온 아이디어를 발표하고 투표를 통해 4개의 아이디어를 선정했다. 운 좋게 내가 생각했던 아이디어가 뽑혀서 7명이 진행하게 되었다. 각자 자기소개하고 목표 등에 대해 이야기를 나눴다.
 
-![](./images/teo-sprint-11-gooding-1.png)
+![](./images/teo_sprint_11_gooding_1.png)
 
 두 번째 날에는 각자 레퍼런스를 찾아오고 지도를 그리는 시간을 가졌다. 우리 서비스의 목적, 대상, 가치 등에 대해 이야기를 나누면서 목표를 구체화했다. 그리고 `대상 - 목적 - 가치`를 연결하면서 최종적인 화면을 정할 수 있었다.
 
-![](./images/teo-sprint-11-gooding-2.png)
+![](./images/teo_sprint_11_gooding_2.png)
 
 세 번째 날에는 화면을 디자인하고 [SDD와 BDD](https://velog.io/@teo/behavior-driven-development-schema-driven-development)를 통해 화면별로 어떤 데이터가 있고, 어떻게 바뀌며, 사용자가 어떤 행동을 할 수 있는지에 대해 정리했다. 최종적으로 우리 팀은 개발할 것을 화면별로 나눈 뒤 현업자 1명 + 취준생 1~2명끼리 묶어 분담했다.
 
-![](./images/teo-sprint-11-gooding-3.png)
+![](./images/teo_sprint_11_gooding_3.png)
 
 그리고 주말 이틀과 월요일 발표 직전까지 개발했다. 각자 되는 시간에 맞춰서 자유롭게 개발했다.
 
@@ -47,7 +47,7 @@ draft: false
 
 - **페어 프로그래밍**을 해봤다. 페어 프로그래밍은 라이브쉐어를 통해 진행했었는데 나는 나동과 찌나오와 5분씩 돌아가면서 개발했었다. 토요일 저녁부터는 시간 관계상 각자 개발했지만 이후 7명이 모여서 동시에 이곳저곳 수정하며 에러를 해결하기도 했다.
 - **코드 리뷰**를 해보고 받아봤다. 처음에는 무슨 말을 해야 할지 몰라서 주저했었는데 잘한 점을 말해도 된다는 말을 듣고 나서 마음 편하게 리뷰를 할 수 있었다. 뿐만 아니라 코드 리뷰를 요청하기 앞서서 내가 먼저 코드에 대한 설명을 적기도 한다는 말을 듣고는 내가 내 코드 이곳저곳을 리뷰했는데 그것도 재밌었다. 이 덕분에 내 깃허브 `Activity overview 그래프`의 `Code review`가 1%로 올랐다.
-  <img src="./images/teo-sprint-11-gooding-graph.png" width=200>
+  <img src="./images/teo_sprint_11_gooding_graph.png" width='200px'>
 - **아토믹 디자인**으로 개발해봤다. 이 덕분에 컴포넌트 재사용의 편리함을 느낄 수 있었다.
 - `eslint-config-airbnb`로 `eslint`를 꽤 빡세게 설정해서 코드를 작성해봤다. 한 줄에 130자가 넘어가면 에러가 발생한다는 게 솔직히 나로서는 믿기 어려운 일이었다. 그래도 한 줄 한 줄 에러를 잡아가니까 재밌었다. 마치 타입스크립트의 타입을 수정하면서 발생한 에러를 잡는 것과 유사했다. 이 프로젝트보다 린트 설정을 더 까다롭게 설정할 수 있다고 하는데 지금 설정이 익숙해질 때쯤 추가로 설정해보고 싶다.
 - Pull Request 날린 다음에 리뷰 받고 나서 수정 후 머지를 해봤다. PR의 결과는 머지 또는 거절 둘 중 하나인 줄 알았는데, 코드 리뷰를 받는 PR 과정에서 수정할 수 있는 것을 처음 알았다.
@@ -57,7 +57,7 @@ draft: false
 - VSCode의 `git graph`로 `git checkout`을 해봤다. 너무 편하고 너무 좋았다.
 - markdown을 동시에 수정해봤다. 테오가 알려준 [사이트](https://hackmd.io/)를 통해 다같이 수정하는데 좋았다.
 - 여러 명이 함께 커밋을 해봤다. 커밋메시지 다다음 줄부터 `Co-authored-by: ryuna <anottrx@gmail.com>`처럼 추가 작성하면 된다!
-  <img src="./images/teo-sprint-11-gooding-commit.png" width=250>
+  <img src="./images/teo_sprint_11_gooding_commit.png" width='250px'>
 - 깃허브 organization의 Overview에서 찌나오가 예쁘게 만든 구딩 소개 이미지를 볼 수 있도록 `README.md`를 작성해봤다. 어떻게 작성하는지 몰라서 헤맸는데 `.github` 레포지토리를 생성하고 해당 레포지토리에서 작성된 `profile/README.md`가 organization 대표 `README.md`가 된다.
 - `npx prettier -w **/*.tsx`, `npx prettier -w **/*.ts`로 `prettier`를 한번에 적용해봤다.
 

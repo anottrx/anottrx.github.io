@@ -1,5 +1,5 @@
 module.exports = {
-  title: `anottrx.github.io`,
+  title: `Record`,
   description: `records`,
   author: `ryuna`,
   introduction: `개발하면서 배우고 느낀 점을 기록합니다.`,

@@ -5,6 +5,8 @@ category: 'study'
 draft: false
 ---
 
+> 자바스크립트로 코딩테스트를 준비하면서 배운 내용을 정리한 글입니다.   
+
 ## 문자, 문자열
 
 ### Ascii (A~Z: 65~90) (a~z: 97~122)
@@ -126,6 +128,11 @@ for (const [key, value] of myMap) {
 myMap.forEach((value, key, map) => {
   console.log(`${key}: ${value}`)
 })
+```
+```js
+const myMap = new Map();
+myMap.set('R', 0).set('T', 0); // 방법1
+['R', 'T'].forEach(el => myMap.set(el, 0)); // 방법2
 ```
 
 ## Stack, Queue

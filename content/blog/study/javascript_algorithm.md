@@ -5,7 +5,7 @@ category: 'study'
 draft: false
 ---
 
-> 자바스크립트로 코딩테스트를 준비하면서 배운 내용을 정리한 글입니다.   
+> 자바스크립트로 코딩테스트를 준비하면서 배운 내용을 정리한 글입니다.
 
 ## 문자, 문자열
 
@@ -19,8 +19,27 @@ String.fromCharCode(65, 66)
 ### 일치
 
 ```js
-str.includes('e') // 문자열을 포함하고 있는지
-console.log(('str1,str2,str3,str4'.match(/,/g) || []).length) // 일치하는 문자열이 몇 개인지
+str.includes('dog') // 문자열을 포함하고 있는지
+
+const regex = RegExp('dog', 'g')
+if (regex.exec(str) !== null) { // 문자열을 포함하고 있는지
+} 
+
+console.log((str.match(/dog/g) || []).length) // 일치하는 문자열이 몇 개인지
+```
+
+### 바꾸기
+
+```js
+str = str.replace(/dog/gi, 'cat')
+str = str.replaceAll(/dog/gi, 'cat') // ES2021/ES12, Nodejs v15부터 지원
+```
+
+### 반복하기
+
+```js
+'abc'.repeat(2); // 'abcabc'
+'abc'.repeat(0); // ''
 ```
 
 ### 대소문자
@@ -30,16 +49,27 @@ let str = str.toLowerCase()
 str = str.toUpperCase()
 ```
 
-### 시작과 끝
+### 시작과 끝 확인과 시작과 끝 채우기
 
 ```js
-if (str.startsWith('start')) {
-}
-if (str.endsWith('end')) {
-}
+if (str.startsWith('start')) { // 시작한다면
+} 
+if (str.endsWith('end')) { // 끝난다면
+} 
+
+// 시작과 끝 채우기
+let str = '11'
+console.log(str.padStart(4, '0')) // 0011
+console.log(str.padEnd(4, '0')) // 1100
 ```
 
 ## 배열
+
+### 배열
+
+```js
+arr.splice(5, 1) // 5번째 인덱스 값 제거
+```
 
 ### 일차원 배열
 
@@ -129,22 +159,24 @@ myMap.forEach((value, key, map) => {
   console.log(`${key}: ${value}`)
 })
 ```
+
 ```js
-const myMap = new Map();
-myMap.set('R', 0).set('T', 0); // 방법1
-['R', 'T'].forEach(el => myMap.set(el, 0)); // 방법2
+const myMap = new Map()
+myMap.set('R', 0).set('T', 0) // 방법1
+;['R', 'T'].forEach(el => myMap.set(el, 0)) // 방법2
 ```
 
 ## Stack, Queue
 
 ```js
 const stack = []
-stack.push(1)
-stack.pop()
+stack.push(1) // 배열 맨 뒤에 값 삽입
+stack.pop() // 배열 맨 마지막 값 제거
 
 const queue = []
-queue.push(1)
-queue.shift()
+queue.shift() // 배열 맨 앞 값 제거
+
+arr.unshift(1) // 배열 맨 앞에 값 삽입
 ```
 
 ## 숫자
@@ -189,7 +221,7 @@ Number.MAX_SAFE_INTEGER
 Number.MIN_SAFE_INTEGER
 ```
 
-### 나눗셈, 제곱, 절대값
+### 나눗셈, 제곱, 절대값, 소수점 이하 자리수
 
 ```js
 3 / 2 // 1.5
@@ -200,4 +232,9 @@ Math.round(3 / 2) // 반올림
 Math.pow(2, 3) // 2의 3제곱
 
 Math.abs() // 절대값
+
+console.log((23.345).toFixed(2)) // "23.34"
 ```
+
+<br />
+<br />

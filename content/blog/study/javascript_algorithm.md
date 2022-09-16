@@ -94,6 +94,12 @@ arr.length = 0
 arr = arr.splice(0, arr.length)
 ```
 
+### 배열 값 포함 여부 확인
+
+```js
+if(arr.includes("dog")) {} // true
+```
+
 ### String, Array
 
 ```js
@@ -151,9 +157,7 @@ console.log(myMap.size)
 if (myMap.has('id')) {
 }
 
-for (const [key, value] of myMap) {
-  console.log(key, value)
-}
+for (const [key, value] of myMap) {}
 
 myMap.forEach((value, key, map) => {
   console.log(`${key}: ${value}`)
@@ -163,7 +167,7 @@ myMap.forEach((value, key, map) => {
 ```js
 const myMap = new Map()
 myMap.set('R', 0).set('T', 0) // 방법1
-;['R', 'T'].forEach(el => myMap.set(el, 0)) // 방법2
+['R', 'T'].forEach(el => myMap.set(el, 0)) // 방법2
 ```
 
 ## Stack, Queue
@@ -230,6 +234,7 @@ Math.ceil(3 / 2) // 올림
 Math.round(3 / 2) // 반올림
 
 Math.pow(2, 3) // 2의 3제곱
+2 ** 3 // 2의 3제곱 (ES7에 도입)
 
 Math.abs() // 절대값
 

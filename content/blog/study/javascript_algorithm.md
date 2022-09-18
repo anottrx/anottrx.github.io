@@ -5,11 +5,16 @@ category: 'study'
 draft: false
 ---
 
-> 자바스크립트로 코딩테스트를 준비하면서 배운 내용을 정리한 글입니다.
+> 자바스크립트로 코딩테스트를 준비하면서 배운 내용을 정리합니다.
+
+<br />
 
 ## 문자, 문자열
 
-### Ascii (A~Z: 65~90) (a~z: 97~122)
+### Ascii
+
+- A ~ Z : 65 ~ 90
+- a ~ z : 97 ~ 122
 
 ```js
 'a'.charCodeAt(0) // 아스키코드 출력
@@ -63,12 +68,22 @@ console.log(str.padStart(4, '0')) // 0011
 console.log(str.padEnd(4, '0')) // 1100
 ```
 
+<br />
+
 ## 배열
 
-### 배열
+### 값 제거
 
 ```js
 arr.splice(5, 1) // 5번째 인덱스 값 제거
+```
+
+### for문 없이 n번 반복
+
+```js
+[...new Array(n)].forEach(() => {
+  // 코드
+});
 ```
 
 ### 일차원 배열
@@ -127,6 +142,8 @@ arr.sort(function(a, b) {
 const result = arr.reduce((prev, cur) => [...prev, cur.cost], [])
 ```
 
+<br />
+
 ## Set, Map
 
 ### Set
@@ -170,6 +187,8 @@ myMap.set('R', 0).set('T', 0) // 방법1
 ['R', 'T'].forEach(el => myMap.set(el, 0)) // 방법2
 ```
 
+<br />
+
 ## Stack, Queue
 
 ```js
@@ -182,6 +201,8 @@ queue.shift() // 배열 맨 앞 값 제거
 
 arr.unshift(1) // 배열 맨 앞에 값 삽입
 ```
+
+<br />
 
 ## 숫자
 

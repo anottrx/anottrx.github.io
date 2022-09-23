@@ -36,8 +36,15 @@ console.log((str.match(/dog/g) || []).length) // 일치하는 문자열이 몇 �
 ### 바꾸기
 
 ```js
+// 문자열 내에 값 찾아서 바꾸기
 str = str.replace(/dog/gi, 'cat')
 str = str.replaceAll(/dog/gi, 'cat') // ES2021/ES12, Nodejs v15부터 지원
+```
+
+### 숫자를 문자열로 바꾸기
+
+```js
+10 + '' // number → string
 ```
 
 ### 반복하기
@@ -109,6 +116,12 @@ arr.length = 0
 arr = arr.splice(0, arr.length)
 ```
 
+### 배열 합치기
+
+```js
+const arr = arr1.concat(arr2);
+```
+
 ### 배열 값 포함 여부 확인
 
 ```js
@@ -118,7 +131,7 @@ if(arr.includes("dog")) {} // true
 ### String, Array
 
 ```js
-// Array -> String
+// Array → String
 const arr = ['h', 'e', 'l', 'l', 'o']
 arr.toString() // h,e,l,l,o
 arr.join('') // hello
@@ -152,8 +165,8 @@ const result = arr.reduce((prev, cur) => [...prev, cur.cost], [])
 
 ```js
 const nums = [3, 1, 2, 3]
-const mySet = [...new Set(nums)] // array -> set
-const myArr = [...mySet] // set -> array
+const mySet = [...new Set(nums)] // array → set
+const myArr = [...mySet] // set → array
 
 const mySet = new Set()
 mySet.add(1) // Set { 1 }
@@ -260,6 +273,12 @@ Math.pow(2, 3) // 2의 3제곱
 Math.abs() // 절대값
 
 console.log((23.345).toFixed(2)) // "23.34"
+```
+
+### 배열 총합
+
+```js
+let sum = arr.reduce((prev, cur) => prev + cur, 0);
 ```
 
 <br />

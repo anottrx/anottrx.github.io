@@ -33,6 +33,14 @@ if (regex.exec(str) !== null) { // 문자열을 포함하고 있는지
 console.log((str.match(/dog/g) || []).length) // 일치하는 문자열이 몇 개인지
 ```
 
+### 자르기
+
+```js
+const str = 'hello';
+console.log(str.slice(0, 2)); // 'he'
+console.log(str.slice(1)); // 'ello'
+```
+
 ### 바꾸기
 
 ```js
@@ -114,6 +122,12 @@ const visited = [...Array(N)].map(e => Array(M).fill(false))
 arr = []
 arr.length = 0
 arr = arr.splice(0, arr.length)
+```
+
+### 배열 역순
+
+```js
+arr.reverse()
 ```
 
 ### 배열 합치기
@@ -275,7 +289,7 @@ Math.abs() // 절대값
 console.log((23.345).toFixed(2)) // "23.34"
 ```
 
-### 배열 총합
+### 배열 합계
 
 ```js
 let sum = arr.reduce((prev, cur) => prev + cur, 0);

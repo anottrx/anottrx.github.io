@@ -85,7 +85,25 @@ console.log(str.padEnd(4, '0')) // 1100
 
 <br />
 
+## Object
+
+### Object 합치기
+
+```js
+const result = Object.assign({id: 1}, {name: 'Lee'});
+```
+
+<br />
+
 ## 배열
+
+### 값 찾기
+
+```js
+const names = ['Lee', 'Kim'];
+console.log(names.indexOf('Lee')); // 0
+console.log(names.indexOf('Park')); // -1
+```
 
 ### 값 제거
 
@@ -97,15 +115,16 @@ arr.splice(5, 1) // 5번째 인덱스 값 제거
 
 ```js
 [...new Array(n)].forEach(() => {
-  // 코드
 });
 ```
 
 ### 일차원 배열
 
 ```js
-const arr = Array.from(Array(10).keys()) // 0부터 9까지 채우기
-const arr = new Array(10).fill(false) // 10개를 false로 채우기
+const arr1 = Array.from(Array(10).keys()) // 0부터 9까지 채우기
+const arr2 = new Array(10).fill(false) // 10개를 false로 채우기
+
+const arr3 = Array.from({length: 5}, (_, index) => index); // [0, 1, 2, 3, 4]
 ```
 
 ### 이차원 배열
@@ -203,9 +222,7 @@ if (myMap.has('id')) {
 
 for (const [key, value] of myMap) {}
 
-myMap.forEach((value, key, map) => {
-  console.log(`${key}: ${value}`)
-})
+myMap.forEach((value, key, map) => {})
 ```
 
 ```js
@@ -258,6 +275,13 @@ isNaN(' ') // false
 isNaN(false) // false
 
 Number.isInteger(Number(1))
+if (num % 1 === 0) {}
+```
+
+### 숫자로 바꾸기
+
+```js
+arr.map((el) => +el);
 ```
 
 ### 최댓값, 최솟값

@@ -161,6 +161,14 @@ const arr = arr1.concat(arr2);
 if(arr.includes("dog")) {} // true
 ```
 
+### 배열 내부에서 겹치는 값이 있는지 확인
+
+```js
+if(userNumberList.some((number, index, array) => array.indexOf(number) !== index)) {
+  // true면 배열 내부에서 겹치는 값이 존재하는 것
+}
+```
+
 ### String, Array
 
 ```js
@@ -180,6 +188,9 @@ arr.sort(function(a, b) {
   }
   return a.city > b.city ? 1 : -1
 })
+
+// 문자열 정렬
+arr.sort((a, b) => a.localeCompare(b));
 ```
 
 ### reduce로 배열 값 빼서 저장하기

@@ -33,10 +33,18 @@ export default ({ data, location }) => {
   const [count, countRef, increaseCount] = useRenderedCount()
   const [category, selectCategory] = useCategory(DEST)
 
-  useEffect( tabRef => {
-    setDEST(!bioRef.current ? 316 : bioRef.current.getBoundingClientRect().bottom + window.pageYOffset + 24 )
-  }, [bioRef.current])
-
+  useEffect(
+    tabRef => {
+      setDEST(
+        !bioRef.current
+          ? 316
+          : bioRef.current.getBoundingClientRect().bottom +
+              window.pageYOffset +
+              24
+      )
+    },
+    [bioRef.current]
+  )
   useIntersectionObserver()
   useScrollEvent(() => {
     const currentPos = window.scrollY + window.innerHeight
@@ -94,6 +102,7 @@ export const pageQuery = graphql`
             title
             category
             draft
+            introduce
           }
         }
       }

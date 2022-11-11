@@ -3,6 +3,7 @@ title: '정규 표현식 (Regular Expression)'
 date: 2022-11-10 21:00:00
 category: 'study'
 draft: false
+introduce: '정규 표현식을 공부하면서 배운 내용을 정리합니다'
 ---
 
 ## 정규 표현식

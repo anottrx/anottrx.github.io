@@ -1,7 +1,7 @@
 ---
 title: '리액트 에러'
 date: 2011-11-11 11:00:00
-category: 'development'
+category: 'react+ts'
 draft: false
 introduce: '리액트 관련 에러 해결법을 정리합니다'
 ---

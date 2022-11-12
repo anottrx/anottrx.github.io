@@ -1,7 +1,7 @@
 ---
 title: '리액트 에러'
-date: 2011-11-11 11:00:00
-category: 'react+ts'
+date: 2022-11-11 11:00:00
+category: 'development'
 draft: false
 introduce: '리액트 관련 에러 해결법을 정리합니다'
 ---
@@ -33,7 +33,7 @@ introduce: '리액트 관련 에러 해결법을 정리합니다'
   module.exports = nextConfig;
   ```
 
-- 그러나 [리액트 공식 문서](https://ko.reactjs.org/docs/strict-mode.html)에서는 StrictMode가 아래와 같은 문제를 찾아준다고 적혀있으며, `StrictMode`는 개발 모드에서만 활성화되기 때문에, 프로덕션 빌드 때는 문제가 없다고 한다. 
+- 그러나 [리액트 공식 문서](https://ko.reactjs.org/docs/strict-mode.html)에서는 `StrictMode`가 아래와 같은 문제를 찾아준다고 적혀있으며, `StrictMode`는 개발 모드에서만 활성화되기 때문에, 프로덕션 빌드 때는 문제가 없다고 한다. 
 
   - 안전하지 않은 생명주기를 사용하는 컴포넌트 발견
   - 레거시 문자열 ref 사용에 대한 경고

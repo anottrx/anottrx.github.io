@@ -102,7 +102,7 @@ export const pageQuery = graphql`
             title
             category
             draft
-            introduce
+            description
           }
         }
       }

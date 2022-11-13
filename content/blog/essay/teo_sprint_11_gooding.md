@@ -3,7 +3,7 @@ title: '테오의 스프린트 11기 회고'
 date: 2022-8-31 16:00:00
 category: 'essay'
 draft: false
-introduce: '테오의 스프린트 11기 후기입니다'
+description: '테오의 스프린트 11기 후기입니다'
 ---
 
 ## 테오의 스프린트 11기 3조 - 구딩

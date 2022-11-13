@@ -3,7 +3,7 @@ title: 'SQL'
 date: 2022-11-10 21:00:00
 category: 'study'
 draft: false
-introduce: 'MySQL 기준으로 배운 내용을 정리합니다'
+description: 'MySQL 기준으로 배운 내용을 정리합니다'
 ---
 
 ## SELECT

@@ -3,7 +3,7 @@ title: '리액트 에러'
 date: 2022-11-11 11:00:00
 category: 'development'
 draft: false
-introduce: '리액트 관련 에러 해결법을 정리합니다'
+description: '리액트 관련 에러 해결법을 정리합니다'
 ---
 
 ## 리액트 화면이 2번 랜더링되는 현상
@@ -42,3 +42,6 @@ introduce: '리액트 관련 에러 해결법을 정리합니다'
   - 레거시 context API 검사
 
 - 이 문제는 내가 배열에 값을 `push`를 통해 입력했기 때문에 발생했던 문제였다. 그래서 `push` 대신에 마지막 `index + 1` 위치에 값을 넣는 방식으로 해결했다.
+
+<br />
+<br />

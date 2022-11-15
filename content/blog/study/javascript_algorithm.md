@@ -52,6 +52,12 @@ str = str.replaceAll(/dog/gi, 'cat') // ES2021/ES12, Nodejs v15부터 지원
 10 + '' // number → string
 ```
 
+### 숫자 3자리마다 `,` 추가하기
+
+```js
+1000.toLocaleString(); // 1,000 if in U.S. English locale
+```
+
 ### 반복하기
 
 ```js

@@ -292,9 +292,10 @@ Number.isInteger(Number(1))
 if (num % 1 === 0) {}
 ```
 
-### 숫자로 바꾸기
+### 문자열 배열을 숫자로 바꾸기
 
 ```js
+arr.map(Number);
 arr.map((el) => +el);
 ```
 

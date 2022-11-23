@@ -8,6 +8,8 @@ description: '정규 표현식을 공부하면서 배운 내용을 정리합니�
 
 ## 정규 표현식
 
+> 테스트할 수 있는 사이트 : [regex101](https://regex101.com/), [regexr](https://regexr.com/), [regextester](https://www.regextester.com/)
+
 ### 정규 표현식 생성하기
 
 ```js

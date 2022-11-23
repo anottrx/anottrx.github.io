@@ -1,6 +1,6 @@
 module.exports = {
   title: `Record`,
-  description: `records`,
+  description: `record blog`,
   author: `ryuna`,
   introduction: `개발하면서 배우고 느낀 점을 기록합니다.`,
   siteUrl: `https://anottrx.github.io/`, // Your blog site url

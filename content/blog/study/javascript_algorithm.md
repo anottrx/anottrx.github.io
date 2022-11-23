@@ -243,6 +243,8 @@ myMap.forEach((value, key, map) => {})
 const myMap = new Map()
 myMap.set('R', 0).set('T', 0) // 방법1
 ['R', 'T'].forEach(el => myMap.set(el, 0)) // 방법2
+
+const myMap2 = new Map([['a', 1], ['b', 2]]); // 방법3
 ```
 
 <br />

@@ -13,7 +13,7 @@ export default ({ data }) => {
     .map(({ node }) => node)[0]
 
   return (
-    <Layout location={'/'} title={'record'}>
+    <Layout location={'/'} title={'RECORD'}>
       <div
         style={{
           marginLeft: `auto`,

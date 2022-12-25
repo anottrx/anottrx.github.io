@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Record`,
+  title: `RECORD`,
   description: `record blog`,
   author: `ryuna`,
   introduction: `개발하면서 배우고 느낀 점을 기록합니다.`,

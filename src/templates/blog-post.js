@@ -7,12 +7,13 @@ import { Head } from '../components/head'
 import { PostTitle } from '../components/post-title'
 import { PostDate } from '../components/post-date'
 import { PostContainer } from '../components/post-container'
-import { SocialShare } from '../components/social-share'
+// import { SocialShare } from '../components/social-share'
 import { SponsorButton } from '../components/sponsor-button'
 import { Bio } from '../components/bio'
 import { PostNavigator } from '../components/post-navigator'
 import { Disqus } from '../components/disqus'
 import { Utterances } from '../components/utterances'
+import { Toc } from '../components/toc'
 import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
@@ -33,8 +34,10 @@ export default ({ data, pageContext, location }) => {
   return (
     <Layout location={location} title={title}>
       <Head title={postTitle} description={post.excerpt} />
+      {/*  */}
       <PostTitle title={postTitle} />
       <PostDate date={date} />
+      <Toc />
       <PostContainer html={post.html} />
       {/* <SocialShare title={postTitle} author={author} /> */}
       {!!sponsor.buyMeACoffeeId && (

@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.nav {
+  width: 240px;
+  padding: 16px;
+  align-self: flex-start;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 16px;
+  max-height: calc(100vh - 128px);
+  overflow: auto;
+  float: right;
+  margin-right: calc(40% - 40vw);
+  line-height: 1.5;
+
+  @media (width <= 1300px) {
+    display: none;
+  }
+}
+
+a {
+  color: #a197ba;
+}
+
+nav ul li {
+  margin-bottom: 4px;
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  scroll-margin-top: 16px;
+}
+
+.head3 {
+  margin-left: 10px;
+}
+
+.head4 {
+  margin-left: 20px;
+}

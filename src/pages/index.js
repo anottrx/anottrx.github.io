@@ -5,6 +5,7 @@ import { Bio } from '../components/bio'
 import { Category } from '../components/category'
 import { Contents } from '../components/contents'
 import { Head } from '../components/head'
+import { TopLine } from '../components/top-line'
 import { HOME_TITLE } from '../constants'
 import { useCategory } from '../hooks/useCategory'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
@@ -59,21 +60,24 @@ export default ({ data, location }) => {
   })
 
   return (
-    <Layout location={location} title={siteMetadata.title}>
-      <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
-      <Bio ref={bioRef} />
-      <Category
-        categories={categories}
-        category={category}
-        selectCategory={selectCategory}
-      />
-      <Contents
-        posts={posts}
-        countOfInitialPost={countOfInitialPost}
-        count={count}
-        category={category}
-      />
-    </Layout>
+    <>
+      <TopLine />
+      <Layout location={location} title={siteMetadata.title}>
+        <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
+        <Bio ref={bioRef} />
+        <Category
+          categories={categories}
+          category={category}
+          selectCategory={selectCategory}
+        />
+        <Contents
+          posts={posts}
+          countOfInitialPost={countOfInitialPost}
+          count={count}
+          category={category}
+        />
+      </Layout>
+    </>
   )
 }
 

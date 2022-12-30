@@ -1,22 +1,10 @@
 @import '../../styles/variables.scss';
 
-.navbar {
-  width: 100%;
-  height: 8px;
-  background: $theme-gradient;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-}
-
 .top {
   position: relative;
   width: 100%;
   height: 60px;
   background: $theme-gradient;
-  // position: sticky;
-  // top: -56px;
-  // z-index: 2;
 
   .link {
     display: inline-block;

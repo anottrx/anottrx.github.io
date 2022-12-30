@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.top-line {
+  width: 100%;
+  background: $theme-gradient;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  height: 2px;
+}

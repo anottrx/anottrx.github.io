@@ -14,6 +14,7 @@ import { PostNavigator } from '../components/post-navigator'
 import { Disqus } from '../components/disqus'
 import { Utterances } from '../components/utterances'
 import { Toc } from '../components/toc'
+import { TopNav } from '../components/top-nav'
 import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
@@ -32,30 +33,32 @@ export default ({ data, pageContext, location }) => {
   const { title: postTitle, date } = post.frontmatter
 
   return (
-    <Layout location={location} title={title}>
-      <Head title={postTitle} description={post.excerpt} />
-      {/*  */}
-      <PostTitle title={postTitle} />
-      <PostDate date={date} />
-      <Toc />
-      <PostContainer html={post.html} />
-      {/* <SocialShare title={postTitle} author={author} /> */}
-      {!!sponsor.buyMeACoffeeId && (
-        <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
-      )}
-      <Elements.Hr />
-      <Bio />
-      <PostNavigator pageContext={pageContext} />
-      {!!disqusShortName && (
-        <Disqus
-          post={post}
-          shortName={disqusShortName}
-          siteUrl={siteUrl}
-          slug={pageContext.slug}
-        />
-      )}
-      {!!utterances && <Utterances repo={utterances} />}
-    </Layout>
+    <>
+      <TopNav />
+      <Layout location={location} title={title}>
+        <Head title={postTitle} description={post.excerpt} />
+        <PostTitle title={postTitle} />
+        <PostDate date={date} />
+        <Toc />
+        <PostContainer html={post.html} />
+        {/* <SocialShare title={postTitle} author={author} /> */}
+        {!!sponsor.buyMeACoffeeId && (
+          <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
+        )}
+        <Elements.Hr />
+        <Bio />
+        <PostNavigator pageContext={pageContext} />
+        {!!disqusShortName && (
+          <Disqus
+            post={post}
+            shortName={disqusShortName}
+            siteUrl={siteUrl}
+            slug={pageContext.slug}
+          />
+        )}
+        {!!utterances && <Utterances repo={utterances} />}
+      </Layout>
+    </>
   )
 }
 

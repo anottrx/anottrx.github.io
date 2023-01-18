@@ -30,7 +30,6 @@ lang: 'en'
 | ---------------------------- | ----------------- | -------------------------------------------------------------------- |
 | 싸피테크콘서트               | 2021.07 ~         | [깃허브](https://github.com/ssafy-tech-concert/ssafy-tech-concert)   |
 | 뿌셔뿌셔CS맛스터디           | 2021.12 ~         | [노션](https://www.notion.so/CS-b051a98ec943488e85e56d62d55675ff)    |
-| 자바스크립트 스터디          | 2022.12 ~         | [깃허브](https://github.com/Wooteco-JS-study/Modern_Javascript_Teco) |
 | 함수형 프로그래밍 스터디     | 2022.12 ~         | [깃허브](https://github.com/FECrash/FunctionalProgramming)           |
 | 자바스크립트 알고리즘 스터디 | 2023.01 ~         | [깃허브](https://github.com/js-study-algorithm/algorithm-study)      |
 | 자바 알고리즘 스터디         | 2021.07 ~ 2022.05 | [깃허브](https://github.com/SSAFY-11-Algorithm-Study/AlgorithmStudy) |

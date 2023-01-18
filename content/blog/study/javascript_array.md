@@ -22,6 +22,14 @@ words.forEach((word, index, array) => console.log(word))
 const result = words.filter((word, index, array) => word.length > 6)
 ```
 
+### Array.prototype.every()
+
+> 모든 요소가 해당 조건을 만족하면 true를 반환하고, 아닌 요소를 발견하면 false를 반환하고 종료
+
+```js
+const isLengthOver = words.every((word, index, array) => word.length > 6)
+```
+
 ### Array.prototype.some()
 
 > 해당 조건에 맞는 요소가 하나라도 있으면 true 반환하고 끝내고, 없다면 false를 반환
@@ -53,6 +61,22 @@ const beasts = ['ant', 'bison', 'camel', 'bison']
 console.log(beasts.indexOf('bison')) // 1
 console.log(beasts.indexOf('bison', 2)) // 3
 console.log(beasts.indexOf('giraffe')) // -1
+```
+
+### Array.prototype.find()
+
+> 해당 조건을 만족하는 첫 번째 요소를 반환하고 종료. 없다면 undefined 반환
+
+```js
+const found = arr.find((element, index, array) => element > 10)
+```
+
+### Array.prototype.findIndex()
+
+> 해당 조건을 만족하는 첫 번째 요소의 인덱스를 반환하고 종료. 배열 길이가 0이거나 조건에 만족하는 요소가 없다면 -1 반환
+
+```js
+const found = arr.findIndex((element, index, array) => element > 10)
 ```
 
 <br />

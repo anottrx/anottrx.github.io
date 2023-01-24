@@ -15,7 +15,8 @@ description: '자바스크립트로 코딩테스트를 준비하면서 배운 �
 
 ```js
 'a'.charCodeAt(0); // 아스키코드 출력
-String.fromCharCode(65, 66);
+String.fromCharCode(65, 66); // 'AB'
+String.fromCharCode(65); // 'A'
 ```
 
 ### 일치

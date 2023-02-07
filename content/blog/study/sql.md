@@ -71,5 +71,12 @@ SELECT AGE, GENDER
   LIMIT 1;
 ```
 
+### 날짜와 IF
+
+```sql
+SELECT IF(DATEDIFF(END_DATE, START_DATE)+1>=30, '장기 대여', '단기 대여') AS RENT_TYPE
+  FROM COMPANY
+```
+
 <br />
 <br />

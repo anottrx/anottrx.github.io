@@ -12,7 +12,7 @@ description: 'MySQL 기준으로 배운 내용을 정리합니다'
 
 ```sql
 SELECT AGE, GENDER
-  FROM table
+  FROM table1
   WHERE AGE > 12 AND GENDER = 'W';
 ```
 
@@ -20,12 +20,12 @@ SELECT AGE, GENDER
 
 ```sql
 SELECT GENDER
-  FROM table
+  FROM table1
   WHERE GENDER IN ('W', 'M');
 -- WHERE GENDER = 'W' OR GENDER = 'M';
 
 SELECT GENDER
-  FROM table
+  FROM table1
   WHERE NOT GENDER IN ('W', 'M');
 -- WHERE GENDER != 'W' AND GENDER != 'M';
 ```
@@ -34,24 +34,24 @@ SELECT GENDER
 
 ```sql
 SELECT MAX(age), MIN(age)
-  FROM table;
+  FROM table1;
 ```
 
 ### NULL인 값은 다른 값으로 채우기
 
 ```sql
 SELECT COALESCE(FREEZER_YN, 'N'), IFNULL(FREEZER_YN, 'N')
-  FROM table;
+  FROM table1;
 ```
 
 ### 날짜
 
 ```sql
 SELECT DATE_FORMAT(HIRE_YMD, '%Y-%m-%d')
-  FROM table;
+  FROM table1;
 
 SELECT HIRE_YMD
-  FROM table
+  FROM table1
   WHERE YEAR(HIRE_YMD) = 2022;
 ```
 
@@ -59,7 +59,7 @@ SELECT HIRE_YMD
 
 ```sql
 SELECT COUNT(*) AS NO_AGE
-  FROM table
+  FROM table1
   WHERE AGE IS NULL;
 ```
 
@@ -67,7 +67,7 @@ SELECT COUNT(*) AS NO_AGE
 
 ```sql
 SELECT AGE, GENDER
-  FROM table
+  FROM table1
   LIMIT 1;
 ```
 

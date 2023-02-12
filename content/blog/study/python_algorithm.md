@@ -9,6 +9,13 @@ description: '코딩테스트 대비 파이썬 문법을 간단하게 정리합�
 ### 문법
 
 ```py
+# 숫자와 문자열 변환
+str(1)
+int('1')
+
+# split
+texts = text.split()
+
 # 조건문(if, else if, else), True, False
 if '사과' in arr:
   print(True)
@@ -37,13 +44,13 @@ list2 = []
 
 arr = [[0] * m for _ in range(n)]
 
-list.append(1)
-list.remove(1) # 값이 1인 데이터 삭제
-list.reverse()
+arr1.append(1)
+arr1.remove(1) # 값이 1인 데이터 삭제
+arr1.reverse()
 
 # 정렬
-list.sort()
-list.sort(reverse = True)
+arr1.sort()
+arr1.sort(reverse = True)
 ```
 
 ### dict, set

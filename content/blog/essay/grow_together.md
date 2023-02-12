@@ -6,6 +6,8 @@ draft: false
 description: '도서 함께 자라기를 읽고 느낀 점을 작성했습니다'
 ---
 
+## 함께 자라기
+
 > 도서 [함께 자라기: 애자일로 가는 길(김창준 지음, 인사이트, 2022)](http://www.yes24.com/Product/Goods/67350256)를 읽고 작성했습니다
 
 > 책을 읽으면서 따로 [정리](https://github.com/anottrx/study-archive/tree/main/%ED%95%A8%EA%BB%98%20%EC%9E%90%EB%9D%BC%EA%B8%B0)했습니다.

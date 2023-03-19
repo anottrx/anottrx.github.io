@@ -1,5 +1,5 @@
 ---
-title: 'SQL'
+title: 'MySQL'
 date: 2022-11-10 21:00:00
 category: 'study'
 draft: false

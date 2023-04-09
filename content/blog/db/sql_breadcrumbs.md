@@ -12,7 +12,7 @@ description: 'SQL 관련 이것저것을 정리합니다'
 [stackoverflow의 유사한 질문에 대한 답변](https://stackoverflow.com/questions/292026/is-there-a-good-reason-to-use-upper-case-for-sql-keywords)에 의하면 한때는 에디터가 대문자만 키워드로 인식해 하이라이트하던 때가 있었다고 한다. 이제는 소문자도 인식하니 그런 걱정은 안해도 될 것이다.
 다만 [오라클은 주의할 점](http://www.gurubee.net/article/61534)이 있는데, 쿼리 자체는 같아도 대소문자가 다르면 서로 다른 쿼리로 인식하니 한 번 정한 방식대로 이어나가는 것이 중요할 것 같다.
 
-대문자 외에도 들여쓰기 등 [컨벤션을 찾아봤는데 다들 다양하게 사용하는 것](https://stackoverflow.com/questions/519876/sql-formatting-standards) 같았다. 쉼표(`,`) 위치가 뒤로 가는지 앞으로 가는지 등 정말 다양했다.
+대문자 외에도 들여쓰기 등 [컨벤션을 찾아봤는데 다들 다양하게 사용하는 것](https://stackoverflow.com/questions/519876/sql-formatting-standards) 같았다. 쉼표(`,`)의 위치가 뒤로 가는지 앞으로 가는지 등 정말 다양했다.
 
 <br />
 
